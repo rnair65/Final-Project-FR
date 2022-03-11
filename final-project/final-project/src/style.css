@@ -1,0 +1,101 @@
+/*Styles backgroun of webpage*/
+html{
+  background-color:lightblue;
+}
+/*Styles background of navigation bar*/
+.red {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.red a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.red a:hover {
+    background-color: lightblue;
+    color: black;
+}
+/*Makes list display at the top of the screen*/
+li{
+  display: block;
+  font-family:helvetica;
+ border-color:
+}
+/*edits afc teams*/
+#AFC{
+  text-shadow: 2px 2px 5px red;
+}
+/*edits nfc teams*/
+#NFC{
+  text-shadow: 2px 2px 5px blue;
+}
+/*Edits image appearance*/
+img{
+  padding:1px;
+   border:10px solid red;
+  border-radius:25px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; 
+}
+/*Edits headers, onmouseover pgph, and response pgph*/
+h1,h3,#Text,#Response{
+  text-align:center;
+  background-color:white;
+}
+/*Edits creative common attribution*/
+#CC{
+  text-align:center;
+  background-color:lightblue;
+}
+/*Edits button*/
+button{
+  background-color:#0080ff;
+  color:white;
+  padding:.75em;
+ border-radius:20%;
+}
+/*Edits website*/
+iframe{
+ border-width: 1.5em;
+       border-style: ridge;
+       border-color: rgb(102,51,153);
+       border-radius:1.5em;
+  width: 94vw; 
+  height: 50vw;
+}
+/*affects the table's layout*/
+table { 
+  margin-left:auto; 
+  margin-right:auto; 
+       border-width: 1.5em;
+       border-style: ridge;
+       border-color: rgb(102,51,153);
+       border-radius:1.5em;
+       text-align: center;
+  border-spacing: .25em;
+  background-color:rgb(150,175,221);
+       }
+/*Sets first row to light blue*/
+#setblue{
+  background-color:rgb(0,191,255)
+}
+/*Makes different rows alternate colors*/
+tr:nth-child(even) { 
+  background-color: rgb(253,245,230); } 
+tr:nth-child(odd){
+  background-color: rgb(240,128,128)
+}
+/*Makes rows orange when hovering over it*/
+tr:hover{
+  background-color:rgb(253,185,21);
+}

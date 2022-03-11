@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Final Project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+1. Website must have a purpose/function
+2. Website must demonstrate best practices for accessibility, ease of navigation, coding, etc.  
+3. Best UI practices (must look nice; easy on the eyes)
+4. Documentation of site
+Reviewers:
+  1. Ethan Bird
+  2. Mrs. Allen
+-->
+<!DOCTYPE html>
+<!--Begins HTML and sets English as language-->
+<html lang="en">
+  <head>
+    <!--Universal character set-->
+     <meta charset="UTF-8">
+    <!--Webpage title-->
+    <title>Final JavaScript Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links to JavaScript files -->
+    <script src="js/script.js"></script>
+  </head>
+  <!--Beginning of appearing code-->
+  <body>
+    <h1>NFL 2018 Draft Picks</h1>
+    <!--Allows back to top link-->
+    <article id="BTT">
+    <!--Paragraph for built-in image function onmouseover-->
+    <p id="Text"></p>
+      <!--Creative commons picture of NFL draft stage-->
+    <img src="https://c7.staticflickr.com/6/5103/5668477546_a4264e3912_o.jpg" width="200px" alt="Draft Picture" title="Stage for NFL draft" onmouseover="document.getElementById('Text').innerHTML = 'Click on a team to find its draft picks!';">
+    <h3 id="CC">"2011 NFL Draft stage” by Marianne O&#x27;Leary is licensed under CC BY 2.0</h3>
+    
+      <h3> Click one of the teams (AFC labeled red; NFC labeled blue) below to take you to their draft picks! </h3>
+      <p>
+          <nav>
+    <div class="red">
+      <ul>
+<!--Setting list for each team to find draft picks-->
+        <li><a href=#ARI>Cardinals</a></li>
+        <li><a href=#ATL> Falcons</a></li>
+        <li><a href=#BAL> Ravens </a></li>
+        <li><a href=#BUF> Bills </a></li>
+        <li><a href=#CAR> Panthers</a></li>
+        <li><a href=#CHI> Bears</a></li>
+        <li><a href=#CIN> Bengals</a></li>
+        <li><a href=#CLE> Browns</a></li>
+        <li><a href=#DAL> Cowboys</a></li>
+        <li><a href=#DEN> Broncos</a></li>
+        <li><a href=#DET> Lions</a></li>
+        <li><a href=#GB> Packers</a></li>
+        <li><a href=#HOU> Texans</a></li>
+        <li><a href=#IND> Colts</a></li>
+        <li><a href=#JAX> Jaguars</a></li>
+        <li><a href=#KC> Chiefs</a></li>
+        <li><a href=#LAC> Chargers</a></li>
+        <li><a href=#LAR> Rams</a></li>
+        <li><a href=#MIA> Dolphins</a></li>
+        <li><a href=#MIN> Vikings</a></li>
+        <li><a href=#NE> Patriots</a></li>
+        <li><a href=#NO> Saints</a></li>
+        <li><a href=#NYG> Giants</a></li>
+        <li><a href=#NYJ> Jets</a></li>
+        <li><a href=#OAK> Raiders</a></li>
+        <li><a href=#PHI> Eagles</a></li>
+        <li><a href=#PIT> Steelers</a></li>
+        <li><a href=#SEA> Seahawks</a></li>
+        <li><a href=#SF> 49ers</a></li>
+        <li><a href=#TB> Buccaneers</a></li>
+        <li><a href=#TEN> Titans</a></li>
+        <li><a href=#WSH> Redskins</a></li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+      </p>
+    <!--Sets up intro for clickable draft picks-->
+    <article id="ARI">
+    <h3>Click below to find out the first three draft picks from each team!</h3>
+    <!--Cardinals Draft picks-->
+      <details>
+   <summary id="NFC">Cardinals' Draft Picks</summary>
+   <ol>
+     
+       <li onclick="ARI()">Josh Rosen</li>
+       <li>Christian Kirk</li>
+       <li>Mason Cole</li>
+        </ol>
+</details>
+      <!--Falcons Draft picks-->
+      <article id="ATL">
+      <details >
+   <summary id="NFC">Falcons' Draft Picks</summary>
+   <ol>
+     
+       <li>Calvin Ridley</li>
+       <li>Isaiah Oliver</li>
+       <li>Deandrin Senat</li>
+        </ol>
+</details>
+        <!--Ravens Draft picks-->
+      <article id="BAL">
+      <details >
+   <summary id="AFC">Ravens' Draft Picks</summary>
+   <ol>
+     
+       <li>Hayden Hurst</li>
+       <li>Lamar Jackson</li>
+       <li>Orlando Brown</li>
+        </ol>
+</details>
+        <!--Bills Draft picks-->
+        <article id="BUF">
+      <details >
+   <summary id="AFC">Bills' Draft Picks</summary>
+   <ol>
+     
+       <li>Josh Allen</li>
+       <li>Tremaine Edmunds</li>
+       <li>Harrison Phillips</li>
+        </ol>
+</details>
+          <!--Panthers Draft picks-->
+          <article id="CAR">
+      <details >
+   <summary id="NFC">Panthers' Draft Picks</summary>
+   <ol>
+     
+       <li>D.J. Moore</li>
+       <li>Donte Jackson</li>
+       <li>Rashaan Gaulden</li>
+        </ol>
+</details>
+            <!--Bears Draft picks-->
+            <article id="CHI">
+      <details >
+   <summary id="NFC">Bears' Draft Picks</summary>
+   <ol>
+     
+       <li>Roquan Smith</li>
+       <li>James Daniels</li>
+       <li>Anthony Miller</li>
+        </ol>
+</details>
+              <!--Bengals Draft picks-->
+              <article id="CIN">
+      <details >
+   <summary id="AFC">Bengals' Draft Picks</summary>
+   <ol>
+     
+       <li>Billy Price</li>
+       <li>Jessie Bates III</li>
+       <li>Sam Hubbard</li>
+        </ol>
+</details>
+                <!--Browns Draft picks-->
+                <article id="CLE">
+      <details >
+   <summary id="AFC">Browns' Draft Picks</summary>
+   <ol>
+     
+       <li>Baker Mayfield</li>
+       <li>Denzel Ward</li>
+       <li>Austin Corbett</li>
+        </ol>
+</details>
+                  <!--Cowboys Draft picks-->
+                  <article id="DAL">
+      <details>
+   <summary id="NFC">Cowboys' Draft Picks</summary>
+   <ol>
+     
+       <li>Leighton Vanderesch</li>
+       <li>Connor Williams</li>
+       <li>Michael Gallup</li>
+        </ol>
+</details>
+                    <!--Broncos Draft picks-->
+                    <article id="DEN">
+      <details >
+   <summary id="AFC">Broncos' Draft Picks</summary>
+   <ol>
+     
+       <li>Bradley Chubb</li>
+       <li>Courtland Sutton</li>
+       <li>Royce Freeman</li>
+        </ol>
+</details>
+                      <!--Lions Draft picks-->
+                      <article id="DET">
+      <details >
+   <summary id="NFC">Lions' Draft Picks</summary>
+   <ol>
+     
+       <li>Frank Ragnow</li>
+       <li>Kerryon Johnson</li>
+       <li>Tracy Walker</li>
+        </ol>
+</details>
+                        <!--Packers Draft picks-->
+                        <article id="GB">
+      <details >
+   <summary id="NFC">Packers' Draft Picks</summary>
+   <ol>
+     
+       <li>Jaire Alexander</li>
+       <li>Josh Jackson</li>
+       <li>Oren Burks</li>
+        </ol>
+</details>
+<!--Texans Draft picks-->
+                          <article id="HOU">
+      <details >
+   <summary id="AFC">Texans' Draft Picks</summary>
+   <ol>
+     
+       <li>Justin Reid</li>
+       <li>Martinas Rankin</li>
+       <li>Jordan Akins</li>
+        </ol>
+</details>
+<!--Colts Draft picks-->                        
+                            <article id="IND">
+      <details >
+   <summary id="AFC">Colts' Draft Picks</summary>
+   <ol>
+     
+       <li>Quenton Nelson</li>
+       <li>Darius Leonard</li>
+       <li>Braden Smith</li>
+        </ol>
+</details>
+                              <!--Jaguars Draft picks-->
+                              <article id="JAX">
+      <details >
+   <summary id="AFC">Jaguars' Draft Picks</summary>
+   <ol>
+     
+       <li>Taven Bryan</li>
+       <li>D.J. Chark</li>
+       <li>Ronnie Harrison</li>
+        </ol>
+</details>
+                                <!--Chiefs Draft picks-->
+                                <article id="KC">
+      <details >
+   <summary id="AFC">Chiefs' Draft Picks</summary>
+   <ol>
+     
+       <li>Breeland Speaks</li>
+       <li>Derrick Nnadi</li>
+       <li>Dorian O'Daniel</li>
+        </ol>
+</details>
+                                  <!--Chargers Draft picks-->
+                                  <article id="LAC">
+      <details >
+   <summary id="AFC">Chargers' Draft Picks</summary>
+   <ol>
+     
+       <li>Derwin James</li>
+       <li>Uchenna Nwosu</li>
+       <li>Justin Jones</li>
+        </ol>
+</details>
+                                    <!--Rams Draft picks-->
+                                    <article id="LAR">
+      <details >
+   <summary id="NFC">Rams' Draft Picks</summary>
+   <ol>
+     
+       <li>Joe Noteboom</li>
+       <li>Brian Allen</li>
+       <li>John Franklin-Meyers</li>
+        </ol>
+</details>
+ <!--Dolphins Draft picks-->                                     
+                                      <article id="MIA">
+      <details >
+   <summary id="AFC">Dolphins' Draft Picks</summary>
+   <ol>
+     
+       <li>Minkah Fitzpatrick</li>
+       <li>Mike Gesicki</li>
+       <li>Jerome Baker</li>
+        </ol>
+</details>
+          <!--Vikings Draft picks-->                              <article id="MIN">
+      <details >
+   <summary id="NFC">Vikings' Draft Picks</summary>
+   <ol>
+     
+       <li>Mike Hughes</li>
+       <li>Brian O'Neill</li>
+       <li>Jalyn Homes</li>
+        </ol>
+</details>
+           <!--Patriots Draft picks-->                               <article id="NE">
+      <details >
+   <summary id="AFC">Patriots' Draft Picks</summary>
+   <ol>
+     
+       <li>Isaiah Wynn</li>
+       <li>Sony Michel</li>
+       <li>Duke Dawson</li>
+        </ol>
+</details>
+                                        
+<!--Saints Draft picks-->                                                             <article id="NO">
+      <details >
+   <summary id="NFC">Saints' Draft Picks</summary>
+   <ol>
+     
+       <li>Marcus Davenport</li>
+       <li>Tre'Quan Smith</li>
+       <li>Rick Leonard</li>
+        </ol>
+</details>
+<!--Giants Draft picks-->                                        
+ <article id="NYG">
+      <details >
+   <summary id="NFC">Giants' Draft Picks</summary>
+   <ol>
+     
+       <li>Saquon Barkley</li>
+       <li>Will Hernandez</li>
+       <li>Lorenzo Carter</li>
+        </ol>
+</details>
+   <!--Jets Draft picks-->
+   <article id="NYJ">
+      <details >
+   <summary id="AFC">Jets' Draft Picks</summary>
+   <ol>
+     
+       <li>Sam Darnold</li>
+       <li>Nathan Shepherd</li>
+       <li>Chris Herndon</li>
+        </ol>
+</details>
+     <!--Raiders Draft picks-->
+     <article id="OAK">
+      <details >
+   <summary id="AFC">Raiders' Draft Picks</summary>
+   <ol>
+     
+       <li>Kolton Miller</li>
+       <li>P.J. Hall</li>
+       <li>Brandon Parker</li>
+        </ol>
+</details>
+       <!--Eagles Draft picks-->
+       <article id="PHI">
+      <details >
+   <summary id="NFC">Eagles' Draft Picks</summary>
+   <ol>
+     
+       <li>Dallas Goedert</li>
+       <li>Avonte Maddox</li>
+       <li>Josh Sweat</li>
+        </ol>
+</details>
+         <!--Steelers Draft picks-->
+         <article id="PIT">
+      <details >
+   <summary id="AFC">Steelers' Draft Picks</summary>
+   <ol>
+     
+       <li>Terrell Edmunds</li>
+       <li>James Washington</li>
+       <li>Mason Rudolph</li>
+        </ol>
+</details>
+           <!--Seahawks Draft picks-->
+           <article id="SEA">
+<details>
+   <summary id="NFC">Seahawks' Draft Picks</summary>
+   <ol>
+     
+       <li>Rashaad Penny</li>
+       <li>Rasheem Green</li>
+       <li>Will Dissly</li>
+        </ol>
+</details>
+             <!--49ers Draft picks-->
+             <article id="SF">
+      <details >
+   <summary id="NFC">49ers' Draft Picks</summary>
+   <ol>
+     
+       <li>Mike McGlinchey</li>
+       <li>Dante Pettis</li>
+       <li>Fred Warner</li>
+        </ol>
+</details>
+               <!--Buccaneers Draft picks-->
+               <article id="TB">
+      <details >
+   <summary id="NFC">Buccaneers' Draft Picks</summary>
+   <ol>
+     
+       <li>Vita Vea</li>
+       <li>Ronald Jones II</li>
+       <li>M.J. Stewart</li>
+        </ol>
+</details>
+                 <!--Titans Draft picks-->
+                 <article id="TEN">
+      <details >
+   <summary id="AFC">Titans' Draft Picks</summary>
+   <ol>
+     
+       <li>Rashaan Evans</li>
+       <li>Harold Landry</li>
+       <li>Dane Cruikshank</li>
+        </ol>
+</details>
+                   <!--Redskins Draft picks-->
+                   <article id="WSH">
+      <details>
+   <summary id="NFC">Redskins' Draft Picks</summary>
+   <ol>
+     
+       <li>Da'Ron Payne</li>
+       <li>Derrius Guice</li>
+       <li>Geron Christian</li>
+        </ol>
+</details>
+                     <!--Asks reader opinion of draft--><br>
+                     <button onclick="Survey()">How Did Your Team Do?</button>         
+ <!--Paragraph from if else statement-->
+                     <p id="Response"></p>                    
+                     <!--Back to Top link-->
+                     <br><br>
+                     <a href=#BTT>Back To Top</a>
+                     <br><br>
+                                 
+ <!--Link to Nfl draft grading website and introduction to it-->
+                     <h3>Let's see how your grade compares to the experts!</h3>            
+                     <iframe id="DRAFT"src="http://bleacherreport.com/articles/2773398-2018-nfl-draft-grades-for-every-team" width="500px" height="500px"> </iframe>   
+                     
+       <!--Introduction to table-->   <h3>Here's how the staff and captains of some future NFL teams will look like!</h3>           
+                     <!--Table of some future NFL team staff and captains-->
+  <table border=1>
+      
+      <!--set header row-->
+      
+        <tr id="setblue"> 
+          <!--First row telling what each section is-->
+          <th>Team</th>
+          <th>Offensive Captain(s)</td>
+          <th>Defensive Captain(s)</td>
+          <th>Head Coach</td>
+          <th>President</th>
+          <th>Owner</th>
+          
+         </tr> 
+      <tbody>
+   <tr id="odd">
+     
+   
+     <!--Row talking about the Arizona Cardinals-->
+     <td>Arizona Cardinals</td> 
+    <td>Carson Palmer, Larry Fitzgerald</td>
+    <td>Frostee Rucker, Patrick Peterson</td>
+    <td>Steve Wilks</td>
+    <td>Michael Bidwill</td>
+    <td>Bill Bidwill</td>
+  </tr> 
+
+<tr id="even">
+  <!--Row talking about the New England Patriots-->
+    <td>New England Patriots</th> 
+    <td>Tom Brady, Rob Gronkowski, David Andrews</td>
+    <td>Dont'a Hightower, Devin McCourty, Duron Harmon</td>
+    <td>Bill Belichick</td>
+    <td>Jonathan Kraft
+</td>
+    <td>Robert Kraft
+</td>
+    
+  </tr> 
+
+<tr id="odd">
+  <!--Row talking about the New York Giants-->
+    <td>New York Giants</th> 
+    <td>Eli Manning</td>
+    <td>Jonathan Casillas</td>
+    <td>Pat Shurmur
+</td>
+    <td>John Mara
+</td>
+    <td> John Mara, Steve Tisch
+</td>
+    
+  </tr> 
+<tr id="even">
+  <!--Row talking about the Pittsburgh Steelers-->
+    <td>Pittsburgh Steelers</th> 
+    <td>Ben Roethlisberger</td>
+    <td>Cameron Heyward	</td>
+    <td>Mike Tomlin</td>
+    <td>Art Rooney II
+</td>
+    <td>Rooney family
+</td>
+    
+  </tr> 
+<tr id="odd">
+  <!--Row talking about the Cleveland Browns-->
+    <td>Cleveland Browns</th> 
+    <td>Joe Thomas</td>
+    <td>Christian Kirksey, Jamie Collins, Jamar Taylor</td>
+    <td>Hue Jackson
+</td>
+    <td>Paul DePodesta
+</td>
+    <td> Jimmy Haslam, Dee Haslam
+</td>
+    
+  </tr> 
+<tr id="even">
+  <!--Row talking about the New Orleans Saints-->
+  <td>New Orleans Saints</td>
+  <td>Drew Brees, Zach Strief, Max Unger</td>
+  <td>Cameron Jordan, A. J. Klein</td>
+  <td>Sean Payton</td>
+  <td>Dennis Lauscha</td>
+  <td>Tom Benson</td>
+</tr>
+
+</tbody>
+
+</table>                      
+                     
+                     </body>
+                   </html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
